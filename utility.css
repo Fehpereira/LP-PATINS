@@ -1,0 +1,11 @@
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.center{
+  align-items: center;
+}
