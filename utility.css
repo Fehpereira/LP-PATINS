@@ -7,12 +7,24 @@
   display: grid;
 }
 
-.gap-\.25{
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-1\.25{
   gap: 1.5rem;
+}
+
+.gap-\.5{
+  gap: .5rem;
 }
 
 .flex {
   display: flex;
+}
+
+.column {
+  flex-direction: column;
 }
 
 .center{
@@ -31,15 +43,10 @@
   font: var(--action);
   text-transform: uppercase;
   cursor: pointer;
+  filter: drop-shadow( 0rem 1rem 1rem rgba(0, 0, 0, 0.192));
 }
 
 .btn-secondary{
   all: unset;
-  /* border-radius: 5rem;
-  width: 4.5rem;
-
-  background-color: white;
-  filter: drop-shadow( 0rem 1rem 1rem rgba(0, 0, 0, 0.192)); */
-
   cursor: pointer;
 }
