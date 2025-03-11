@@ -19,7 +19,7 @@
   --h1: 700 2rem/1.25 var(--ff-syne);
   --h2: 700 1.5rem/1.2 var(--ff-syne);
   --span: 400 0.75rem/1.5 var(--ff-mont);
-  --action: 400 1rem/1.5 var(--ff-mont);
+  --action: 500 1rem/1.5 var(--ff-mont);
   
   --pad-x: 1.5rem;
   --pad-footer: 3rem 1.5rem 1.5rem;
@@ -56,13 +56,94 @@ header{
   }
 }
 
- #hero{
+#hero{
+  padding-block: 1rem 3rem;
+  position: relative;
+  grid-auto-flow: row;
+  gap: 2rem; 
 
   & h1{
     font: var(--h1);
 
-    & strong{
+    &::after{
+      content: " radical";
+      font: var(--h1);
       color: var(--snitap-sky-light);
+    }
+  }
+
+  & .title{
+    flex-direction: column; 
+    gap: 3rem;
+
+    & .buttons-wrapper{
+      grid-auto-flow: row;
+      grid-template-rows: 1fr 1fr;
+      position: relative;
+      max-height: 10.5rem;
+      gap: 1.5rem;
+      
+      & img{
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        top: 7.5rem;
+        left: 3rem;
+      }
+
+      & .btn-primary{
+        grid-row: 2/3;
+      }
+    }
+
+  }
+  
+  & img:nth-child(1){
+    width: 18.4375rem;
+    height: 18.4375rem;
+    justify-self: center;
+    }
+
+    & img:nth-child(2){
+      width: 19.5rem;
+      max-height: 19.5rem;
+      position: absolute;
+      top: 1rem;
+    }
+
+    & img:nth-child(3){
+      position: absolute;
+      top: 6.900625rem;
+      left: 1.819375rem;
+      max-width: 3.5rem;
+      max-height: 2.86375rem;
+    }
+
+    & img:nth-child(4){
+      position: absolute;
+      top: 11.79375rem;
+      right: 0.4rem;
+      max-width: 1.598125rem;
+      max-height: 2.3975rem;
+    }
+}
+
+#patins{
+  padding-block: 1.5rem;
+  border: 1px solid red;
+
+  & > div{
+    height: 3.5rem;
+    background-color: rgb(150, 238, 219);
+    justify-content: center;
+
+    & strong{
+      font: 750 1rem/1.2 var(--ff-syne);
+    }
+
+    & img{
+      max-width: 1rem;
+      max-height: 1rem;
     }
   }
 }
@@ -79,5 +160,55 @@ header{
     --pading-footer: 4rem 2rem 2rem;
     --gap: 2rem;
   }
-}
 
+  #hero h1::after{
+    content: " divertida";
+    font: var(--h1);
+    color: var(--snitap-sky-light);
+  }
+
+  #hero {
+    padding-block: 2.5rem;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 30.5rem;
+    position: relative;
+    height: 35.5rem;
+
+    & img{
+      grid-column: 2/3 ;
+    }
+
+    & > div{
+      grid-column: 1/2;
+    }
+    
+    & img:nth-child(1){
+      width: 30.5rem;
+      height: 28.875rem;
+    }
+
+    & img:nth-child(2){
+      width: 30.5rem;
+      max-height: 28.875rem;
+      position: absolute;
+      top: 3.3rem;
+    }
+
+    & img:nth-child(3){
+      position: absolute;
+      top: 11.75rem;
+      left: 1.819375rem;
+      max-width: 5.5rem;
+      max-height: 4.5rem;
+    }
+
+    & img:nth-child(4){
+      position: absolute;
+      top: 19.375rem;
+      right: .5rem;
+      max-width: 2.5rem;
+      max-height: 3.75rem;
+    }
+
+  }
+}

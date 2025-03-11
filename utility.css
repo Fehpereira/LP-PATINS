@@ -6,6 +6,9 @@
   display: grid;
 }
 
+.gap-\.25{
+  gap: 1.5rem;
+}
 
 .flex {
   display: flex;
@@ -19,22 +22,19 @@
   padding-inline: var(--pad-x);
 }
 
-.btn-buy{
-  font: var(--action);
-  color: var(--text);
-  max-width: 17,75rem;
-  padding: 1.5rem 3rem;
-  border-radius: 5rem;
+.btn-primary{
+  all: unset;
   background-color: var(--snitap-sun);
-  filter: drop-shadow(1rem 1rem 3rem black);
-}
-
-.btn-action{
+  padding: 1.5rem 3rem 1.5rem 5.25rem;
+  border-radius: 5rem;
   font: var(--action);
-  color: var(--text);
-  background-color: #FFFFFF;
-  border-radius: 50%;
-  filter: drop-shadow(1rem 1rem 3rem black);
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-@media (width >= 80em){}
+.btn-secondary{
+  all: unset;
+  background: url(assets/icons/Video\ Button.svg) no-repeat ;
+  max-width: 17.75rem ;
+  cursor: pointer;
+}
