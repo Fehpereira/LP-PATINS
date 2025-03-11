@@ -16,11 +16,10 @@
   --ff-syne: 'Syne', sans-serif;
   --ff-mont: 'Montserrat', sans-serif;
   
-  --h1: 700 2rem var(--ff-syne)/125%;
-  --h2: 700 1.5rem var(--ff-syne)/120%;
-  --span: 400 0.75rem var(--ff-mont)150%;
-  --strong: 700 2rem var(--ff-syne)/125%;
-  --action: 400 1rem var(--ff-mont)/150%;
+  --h1: 700 2rem/1.25 var(--ff-syne);
+  --h2: 700 1.5rem/1.2 var(--ff-syne);
+  --span: 400 0.75rem/1.5 var(--ff-mont);
+  --action: 400 1rem/1.5 var(--ff-mont);
   
   --pad-x: 1.5rem;
   --pad-footer: 3rem 1.5rem 1.5rem;
@@ -57,14 +56,24 @@ header{
   }
 }
 
+ #hero{
 
+  & h1{
+    font: var(--h1);
+
+    & strong{
+      color: var(--snitap-sky-light);
+    }
+  }
+}
 
 @media (width >= 80em){
   :root{
+    --snitap-sky-light: #DB2777;
     --max-width: 80em;
-    --h1: 700 4rem var(--ff-syne)/125%;
-    --span: 400 0.875rem var(--ff-mont)/150%;
-    --strong: 700 4rem var(--ff-syne)/125%;
+    --h1: 700 4rem/1.25 var(--ff-syne);
+    --span: 400 0.875rem/1.5 var(--ff-mont);
+    --strong: 700 4rem/1.25 var(--ff-syne);
     
     --pad-x: 2rem;
     --pading-footer: 4rem 2rem 2rem;
