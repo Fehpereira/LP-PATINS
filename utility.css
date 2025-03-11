@@ -1,6 +1,11 @@
+.container{
+  width: var(--max-width);
+}
+
 .grid {
   display: grid;
 }
+
 
 .flex {
   display: flex;
@@ -9,3 +14,27 @@
 .center{
   align-items: center;
 }
+
+.padding-x{
+  padding-inline: var(--pad-x);
+}
+
+.btn-buy{
+  font: var(--action);
+  color: var(--text);
+  max-width: 17,75rem;
+  padding: 1.5rem 3rem;
+  border-radius: 5rem;
+  background-color: var(--snitap-sun);
+  filter: drop-shadow(1rem 1rem 3rem black);
+}
+
+.btn-action{
+  font: var(--action);
+  color: var(--text);
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  filter: drop-shadow(1rem 1rem 3rem black);
+}
+
+@media (width >= 80em){}
