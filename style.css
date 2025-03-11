@@ -19,7 +19,7 @@
   --h1: 700 2rem/1.25 var(--ff-syne);
   --h2: 700 1.5rem/1.2 var(--ff-syne);
   --span: 400 0.75rem/1.5 var(--ff-mont);
-  --action: 500 1rem/1.5 var(--ff-mont);
+  --action: 550 1rem/1.5 var(--ff-mont);
   
   --pad-x: 1.5rem;
   --pad-footer: 3rem 1.5rem 1.5rem;
@@ -38,6 +38,10 @@
   
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--background);
 }
 
 a{
@@ -82,8 +86,9 @@ header{
       position: relative;
       max-height: 10.5rem;
       gap: 1.5rem;
+      max-width: 17.75rem;
       
-      & img{
+      & img[src*="bag"]{
         width: 1.5rem;
         height: 1.5rem;
         position: absolute;
@@ -91,8 +96,36 @@ header{
         left: 3rem;
       }
 
+      &  img[src*="play"]{
+        position: absolute;
+        max-width: 1.5rem ;
+        max-height: 1.5rem;
+        left: 1.5rem;
+        top: 1.5rem;
+      }
+
       & .btn-primary{
         grid-row: 2/3;
+      }
+
+      & #container-btn-secondary{
+        border: 1px solid red;
+        width: 13.0625rem;
+        position: relative;
+
+        & .btn-secondary {
+          position: absolute;
+          inset: 0;
+        }
+
+        & .style-btn-secondary {
+          border-radius: 5rem;
+          width: 4.5rem;
+          height: 4.5rem;
+        
+          background-color: white;
+          filter: drop-shadow( 0rem 1rem 1rem rgba(0, 0, 0, 0.192));
+        }
       }
     }
 
@@ -129,6 +162,7 @@ header{
 }
 
 #patins{
+  /* width: 100vw; */
   padding-block: 1.5rem;
   border: 1px solid red;
 

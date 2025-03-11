@@ -1,5 +1,6 @@
 .container{
   width: var(--max-width);
+  margin-inline: auto;
 }
 
 .grid {
@@ -25,7 +26,7 @@
 .btn-primary{
   all: unset;
   background-color: var(--snitap-sun);
-  padding: 1.5rem 3rem 1.5rem 5.25rem;
+  padding: 1.5rem 1rem 1.5rem 5.25rem;
   border-radius: 5rem;
   font: var(--action);
   text-transform: uppercase;
@@ -34,7 +35,11 @@
 
 .btn-secondary{
   all: unset;
-  background: url(assets/icons/Video\ Button.svg) no-repeat ;
-  max-width: 17.75rem ;
+  /* border-radius: 5rem;
+  width: 4.5rem;
+
+  background-color: white;
+  filter: drop-shadow( 0rem 1rem 1rem rgba(0, 0, 0, 0.192)); */
+
   cursor: pointer;
 }
