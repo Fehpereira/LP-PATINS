@@ -104,8 +104,8 @@ header{
         width: 1.5rem;
         height: 1.5rem;
         position: absolute;
-        top: 7.5rem;
-        left: 3rem;
+        top: 1.45rem;
+        left: 2.9rem;
         z-index: 1;
       }
 
@@ -270,13 +270,13 @@ footer {
     --gap: 2rem;
   }
 
-  #hero h1::after{
+  & #hero h1::after{
     content: " divertida";
     font: var(--h1);
     color: var(--snitap-sky-light);
   }
 
-  #hero {
+  & #hero {
     padding-block: 2.5rem;
     grid-auto-flow: column;
     grid-template-columns: 1fr 30.5rem;
@@ -331,15 +331,6 @@ footer {
         max-width: 32.8125rem ;
         max-height: 4.5625rem;
 
-          & img[src*="bag"] {
-          position: absolute;
-          right: 46rem;
-          left: 0;
-          top: 1.4rem;
-          bottom: 0;
-          }
-
-
           & .btn-primary{
           grid-row: 1;
           }
@@ -347,7 +338,7 @@ footer {
     }
   }
 
-  #main {
+  & #main {
       gap: 2rem;
 
       & .img-container{
@@ -380,15 +371,16 @@ footer {
         height: 25rem;
       }
     }
-  }
 
-  #footer{
-    flex-direction:row;
-    justify-content: space-between;
-    align-items: center;
-
-    & ul[role="list"]{
+    & #footer{
       flex-direction:row;
-    }
- }
+      justify-content: space-between;
+      align-items: center;
+  
+     & ul[role="list"]{
+        flex-direction:row;
+      }
+   }
+}
+
 
